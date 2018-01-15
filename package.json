@@ -1,24 +1,24 @@
 {
-  "author": "Jake Luer <jake@alogicalparadox.com>",
-  "name": "filtr",
-  "description": "Array filtering for node.js and the browser inspired by MongoDB.",
-  "version": "0.3.0",
+  "author": "Muhammad Atif <atif.hussain@blueeast.com>",
+  "name": "loopback-advance-filters",
+  "description": "Array filtering for Looback inspired by MongoDB.",
+  "version": "0.1.0",
   "repository": {
     "type": "git",
-    "url": "git://github.com/logicalparadox/filtr.git"
+    "url": "git://github.com/BlueEastCode/loopback-advance-filters.git"
   },
   "main": "./index",
   "scripts": {
     "test": "make test"
   },
   "engines": {
-    "node": ">=0.4.8"
+    "node": ">=8.9.0"
   },
   "dependencies": {},
   "devDependencies": {
-      "mocha": "*"
-    , "chai": "*"
-    , "folio": "0.2.x"
+    "mocha": "*",
+    "chai": "*",
+    "folio": "0.2.x"
   },
   "optionalDependencies": {}
 }

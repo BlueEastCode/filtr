@@ -6,7 +6,7 @@ all:
 	@node support/compile
 
 clean:
-	@rm dist/filtr.js dist/filtr.min.js
+	@rm dist/filtr.js dist/loopback-advance-filters.min.js
 
 test:
 	@NODE_ENV=test ./node_modules/.bin/mocha \

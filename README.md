@@ -1,4 +1,4 @@
-# Filtr [![Build Status](https://secure.travis-ci.org/logicalparadox/filtr.png)](http://travis-ci.org/logicalparadox/filtr)
+# Loopback Advance Filters [![Build Status](https://secure.travis-ci.org/logicalparadox/filtr.png)](http://travis-ci.org/logicalparadox/filtr)
 
 Filter javascript arrays using a MongoDB style syntax and is available for node.js
 and the browser. It was originally written as an internal component for [Seed](https://github.com/qualiancy/seed),
@@ -10,26 +10,16 @@ but it had no other dependancies and seemed fit for use in the browser.
 
 Filtr is available on npm.
 
-    npm install filtr
-
-### Browser
-
-A browser build is available in the repository's `dist` folder.
-Download the package and include either the normal or minimized build in your HTML header.
-
-    <script src="filtr.js" type="text/javascript"></script>
-    <script src="filtr.min.js" type="text.javascript"></script>
-
-The browser build is fully AMD and CommonJS compatible and should work on all browser.
+    npm install loopback-advance-filters
 
 ## Features
 
-Filtr is still in early development so expect this list to grow.
+loopback-advance-filters is still in early development so expect this list to grow.
 
 ##### Expansive Query Language
 
-* Comparators: `$gt`, `$gte`, `$lt`, `$lte`, `$all`, `$exists`, `$mod`, `$eq`, `$ne`, `$in`, `$nin`, `$size`
-* Traversables: `$or`, `$nor`, `$and`
+* Comparators: `gt`, `gte`, `lt`, `lte`, `all`, `exists`, `mod`, `eq`, `ne`, `in`, `nin`, `size`
+* Traversables: `or`, `nor`, `and`
 
 ##### Data Helpers
 
@@ -40,7 +30,7 @@ Filtr is still in early development so expect this list to grow.
 ### Usage
 
 ```js
-var query = filtr({ $gt: 15, $lt: 25 })
+var query = filtr({ gt: 15, lt: 25 })
   , results = query.test([ 5, 10, 17, 19, 25 ]);
 // results == [ 17, 19 ];
 ```
@@ -61,7 +51,7 @@ Using the `spec` output modifier is an easy way to handle post processing of res
 without having to match up a subset.
 
 ```js
-var query = filtr({ $gt: 15, $lt: 25 })
+var query = filtr({ gt: 15, lt: 25 })
   , results = query.test([ 5, 10, 17, 19, 25 ], { spec: 'boolean' });
 // results == [ false, false, true, true, false ];
 ```
@@ -86,8 +76,8 @@ var dataComplex = [
     }
 ];
 
-var query1 = filtr({ 'a.b': { $gt: 75, $lt: 125 } });
-  , query2 = filtr({ 'a.b': { $gt: 25, $lt: 75 }, 'd[0].e': { $eq: 'universe' } });
+var query1 = filtr({ 'a.b': { gt: 75, lt: 125 } });
+  , query2 = filtr({ 'a.b': { gt: 25, lt: 75 }, 'd[0].e': { $eq: 'universe' } });
 
 var res1 = query1.test(dataComplex)  // result would have the first item
   , res2 = query1.test(dataComplex); // result would have the second item 
@@ -102,7 +92,7 @@ var hello = filtr.getPathValue('d[0].e', dataComplex[1]);
 
 ## Where to Get Help
 
-Please post issues to [GitHub Issues](https://github.com/logicalparadox/filtr/issues).
+Please post issues to [GitHub Issues](https://github.com/BlueEastCode/loopback-advance-filters/issues).
 
 ## Tests
 
@@ -116,10 +106,10 @@ used in both contexts.
 
 ### Contributing
 
-Interested in contributing? Fork to get started. Contact [@logicalparadox](http://github.com/logicalparadox) 
+Interested in contributing? Fork to get started. Contact [@BlueEastCode](http://github.com/BlueEastCode) 
 if you are interested in being regular contributor.
 
-#### Contibutors 
+#### Forked From 
 
 * Jake Luer ([Github: @logicalparadox](http://github.com/logicalparadox)) ([Twitter: @jakeluer](http://twitter.com/jakeluer)) ([Website](http://alogicalparadox.com))
 
