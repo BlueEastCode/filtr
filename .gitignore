@@ -3,3 +3,5 @@
 .DS_Store
 lib-cov
 coverage.html
+.idea
+.vscode
