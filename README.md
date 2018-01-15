@@ -109,7 +109,7 @@ used in both contexts.
 Interested in contributing? Fork to get started. Contact [@BlueEastCode](http://github.com/BlueEastCode) 
 if you are interested in being regular contributor.
 
-###Forked From 
+### Forked From 
 
 * Jake Luer ([Github: @logicalparadox](http://github.com/logicalparadox)) ([Twitter: @jakeluer](http://twitter.com/jakeluer)) ([Website](http://alogicalparadox.com))
 
