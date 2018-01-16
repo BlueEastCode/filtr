@@ -9,16 +9,27 @@
   },
   "main": "./index",
   "scripts": {
-    "test": "make test"
+    "lint": "eslint .",
+    "test": "lint && make test"
   },
   "engines": {
     "node": ">=8.9.0"
   },
-  "dependencies": {},
+  "pre-commit": [
+    "test"
+  ],
+  "dependencies": {
+    "eslint": "^4.15.0"
+  },
   "devDependencies": {
-    "mocha": "*",
     "chai": "*",
-    "folio": "0.2.x"
+    "mocha": "*",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-import": "^2.8.0",
+    "folio": "0.2.x",
+    "pre-commit": "^1.2.2",
+    "eslint-plugin-nodeca": "^1.0.3"
   },
   "optionalDependencies": {}
 }
