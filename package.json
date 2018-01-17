@@ -1,7 +1,7 @@
 {
-  "author": "Muhammad Atif <atif.hussain@blueeast.com>",
-  "name": "loopback-advance-filters",
-  "description": "Array filtering for Looback inspired by MongoDB.",
+  "author": "BlueEast Team <code@blueeast.com>",
+  "name": "@blueeast/loopback-advance-filters",
+  "description": "Filtering for Looback inspired by MongoDB.",
   "version": "0.1.0",
   "repository": {
     "type": "git",
@@ -13,17 +13,16 @@
     "test": "lint && make test"
   },
   "engines": {
-    "node": ">=8.9.0"
+    "node": ">=6.0.0"
   },
   "pre-commit": [
     "test"
   ],
-  "dependencies": {
-    "eslint": "^4.15.0"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "chai": "*",
-    "mocha": "*",
+    "eslint": "^4.15.0",
+    "chai": "^4.1.2",
+    "mocha": "^4.1.0",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-import": "^2.8.0",
